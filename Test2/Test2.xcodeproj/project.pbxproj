@@ -29,8 +29,8 @@
 		A36DD26016C37921002BC149 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36DD22D16C37921002BC149 /* Foundation.framework */; };
 		A36DD26816C37921002BC149 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A36DD26616C37921002BC149 /* InfoPlist.strings */; };
 		A36DD26B16C37921002BC149 /* Test2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A36DD26A16C37921002BC149 /* Test2Tests.m */; };
-		A36DD27516C379AC002BC149 /* LiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36DD27416C379AC002BC149 /* LiveSDK.framework */; };
-		A36DD27616C379DE002BC149 /* LiveSDK.framework in Resources */ = {isa = PBXBuildFile; fileRef = A36DD27416C379AC002BC149 /* LiveSDK.framework */; };
+		A3A5183816C38068000DB976 /* LiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A5183716C38068000DB976 /* LiveSDK.framework */; };
+		A3A5183916C3806C000DB976 /* LiveSDK.framework in Resources */ = {isa = PBXBuildFile; fileRef = A3A5183716C38068000DB976 /* LiveSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +73,7 @@
 		A36DD26716C37921002BC149 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A36DD26916C37921002BC149 /* Test2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2Tests.h; sourceTree = "<group>"; };
 		A36DD26A16C37921002BC149 /* Test2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2Tests.m; sourceTree = "<group>"; };
-		A36DD27416C379AC002BC149 /* LiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LiveSDK.framework; path = "../LiveSDK-for-iOS-master/bin/LiveSDK.framework"; sourceTree = "<group>"; };
+		A3A5183716C38068000DB976 /* LiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LiveSDK.framework; path = Dependencies/LiveSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A5183816C38068000DB976 /* LiveSDK.framework in Frameworks */,
 				A36DD22C16C37921002BC149 /* UIKit.framework in Frameworks */,
 				A36DD22E16C37921002BC149 /* Foundation.framework in Frameworks */,
-				A36DD27516C379AC002BC149 /* LiveSDK.framework in Frameworks */,
 				A36DD23016C37921002BC149 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,7 +104,7 @@
 		A36DD21F16C37921002BC149 = {
 			isa = PBXGroup;
 			children = (
-				A36DD27416C379AC002BC149 /* LiveSDK.framework */,
+				A3A5183716C38068000DB976 /* LiveSDK.framework */,
 				A36DD23116C37921002BC149 /* Test2 */,
 				A36DD26316C37921002BC149 /* Test2Tests */,
 				A36DD22A16C37921002BC149 /* Frameworks */,
@@ -256,8 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A36DD27616C379DE002BC149 /* LiveSDK.framework in Resources */,
 				A36DD23616C37921002BC149 /* InfoPlist.strings in Resources */,
+				A3A5183916C3806C000DB976 /* LiveSDK.framework in Resources */,
 				A36DD23E16C37921002BC149 /* Default.png in Resources */,
 				A36DD24016C37921002BC149 /* Default@2x.png in Resources */,
 				A36DD24216C37921002BC149 /* Default-568h@2x.png in Resources */,
@@ -426,6 +426,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../LiveSDK-for-iOS-master/bin\"",
+					"\"$(SRCROOT)/Dependencies\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test2/Test2-Prefix.pch";
@@ -441,6 +442,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../LiveSDK-for-iOS-master/bin\"",
+					"\"$(SRCROOT)/Dependencies\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test2/Test2-Prefix.pch";
@@ -503,6 +505,7 @@
 				A36DD27016C37921002BC149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A36DD27116C37921002BC149 /* Build configuration list for PBXNativeTarget "Test2Tests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +514,7 @@
 				A36DD27316C37921002BC149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
