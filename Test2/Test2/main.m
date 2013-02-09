@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
+#import "OData.h"
 
 int main(int argc, char *argv[])
 {
+    OData *odata = [OData alloc];
+    NSLog(@"title:", odata.title);
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

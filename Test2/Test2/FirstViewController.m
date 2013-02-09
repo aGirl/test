@@ -15,15 +15,15 @@
 @implementation FirstViewController
 @synthesize liveClient;
 @synthesize infoLabel;
+@synthesize title;
 
 NSString* APP_CLIENT_ID=@"00000000480EA137";
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.liveClient = [[LiveConnectClient alloc] initWithClientId:APP_CLIENT_ID
-                                                         delegate:self
-                                                        userState:@"initialize"];
+	self.liveClient = [[LiveConnectClient alloc] initWithClientId:APP_CLIENT_ID delegate:self userState:@"initialize"];
+    
 }
 
 - (void)authCompleted:(LiveConnectSessionStatus) status

@@ -35,6 +35,7 @@
 		A393E21516C609E800FBA9F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A393E21416C609E800FBA9F7 /* Security.framework */; };
 		A393E21716C609F600FBA9F7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A393E21616C609F600FBA9F7 /* SystemConfiguration.framework */; };
 		A393E21C16C6116B00FBA9F7 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A393E21B16C6116B00FBA9F7 /* libRestKit.a */; };
+		A393E22016C62BE500FBA9F7 /* OData.m in Sources */ = {isa = PBXBuildFile; fileRef = A393E21F16C62BE500FBA9F7 /* OData.m */; };
 		A3A5183816C38068000DB976 /* LiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A5183716C38068000DB976 /* LiveSDK.framework */; };
 		A3A5183916C3806C000DB976 /* LiveSDK.framework in Resources */ = {isa = PBXBuildFile; fileRef = A3A5183716C38068000DB976 /* LiveSDK.framework */; };
 /* End PBXBuildFile section */
@@ -121,6 +122,8 @@
 		A393E21416C609E800FBA9F7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A393E21616C609F600FBA9F7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A393E21B16C6116B00FBA9F7 /* libRestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRestKit.a; path = "../../Library/Developer/Xcode/DerivedData/Test2-ebcqtwzwqemojngtcgprkavdybbx/Build/Products/Debug-iphonesimulator/libRestKit.a"; sourceTree = "<group>"; };
+		A393E21E16C62BE500FBA9F7 /* OData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OData.h; sourceTree = "<group>"; };
+		A393E21F16C62BE500FBA9F7 /* OData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OData.m; sourceTree = "<group>"; };
 		A3A5183716C38068000DB976 /* LiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LiveSDK.framework; path = Dependencies/LiveSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,7 +161,6 @@
 		A36DD21F16C37921002BC149 = {
 			isa = PBXGroup;
 			children = (
-				A393E21B16C6116B00FBA9F7 /* libRestKit.a */,
 				A393E1FB16C605E600FBA9F7 /* RestKit.xcodeproj */,
 				A3A5183716C38068000DB976 /* LiveSDK.framework */,
 				A36DD23116C37921002BC149 /* Test2 */,
@@ -180,6 +182,7 @@
 		A36DD22A16C37921002BC149 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A393E21B16C6116B00FBA9F7 /* libRestKit.a */,
 				A393E21216C609DC00FBA9F7 /* MobileCoreServices.framework */,
 				A393E21016C609B000FBA9F7 /* CoreData.framework */,
 				A36DD22B16C37921002BC149 /* UIKit.framework */,
@@ -208,6 +211,8 @@
 				A36DD25116C37921002BC149 /* SecondViewController.m */,
 				A36DD25316C37921002BC149 /* second.png */,
 				A36DD25516C37921002BC149 /* second@2x.png */,
+				A393E21E16C62BE500FBA9F7 /* OData.h */,
+				A393E21F16C62BE500FBA9F7 /* OData.m */,
 				A36DD23216C37921002BC149 /* Supporting Files */,
 			);
 			path = Test2;
@@ -415,6 +420,7 @@
 				A36DD23C16C37921002BC149 /* AppDelegate.m in Sources */,
 				A36DD24B16C37921002BC149 /* FirstViewController.m in Sources */,
 				A36DD25216C37921002BC149 /* SecondViewController.m in Sources */,
+				A393E22016C62BE500FBA9F7 /* OData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

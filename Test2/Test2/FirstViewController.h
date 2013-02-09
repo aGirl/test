@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LiveSDK/LiveConnectClient.h"
 
-@interface FirstViewController : UIViewController<LiveAuthDelegate, LiveOperationDelegate, LiveDownloadOperationDelegate, LiveUploadOperationDelegate>
+@interface FirstViewController : UIViewController<LiveAuthDelegate, LiveOperationDelegate, LiveDownloadOperationDelegate, LiveUploadOperationDelegate> 
 @property (strong, nonatomic) LiveConnectClient *liveClient;
 @property (strong, nonatomic) IBOutlet UILabel *infoLabel;
 @end
