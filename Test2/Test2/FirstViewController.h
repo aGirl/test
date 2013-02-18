@@ -12,4 +12,11 @@
 @interface FirstViewController : UIViewController<LiveAuthDelegate, LiveOperationDelegate, LiveDownloadOperationDelegate, LiveUploadOperationDelegate> 
 @property (strong, nonatomic) LiveConnectClient *liveClient;
 @property (strong, nonatomic) IBOutlet UILabel *infoLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *genderLabel;
+@property (weak, nonatomic) IBOutlet UILabel *profileLinkLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *profilePictureView;
+@property (weak, nonatomic) IBOutlet UIButton *btnSignIn;
+- (IBAction)buttonButton:(id)sender;
+- (IBAction)donebtn:(id)sender;
 @end

@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface OData : NSObject
-@property (nonatomic,retain)NSString* title;
+@property (nonatomic,retain)NSString* name;
+@property(nonatomic, retain)NSString* url;
 @end
